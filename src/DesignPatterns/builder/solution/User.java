@@ -40,6 +40,11 @@ public class User {
     return userBuilder;
   }
 
+
+  // 1. Define another class with Builder(UserBuilder) suffix
+  // 2. Define same properties in this class.
+  // 3. Create setter to set the values, return the Builder object(this)
+  // 4. Build will create an object of actual class(User)
   static class UserBuilder {
 
     private String name;

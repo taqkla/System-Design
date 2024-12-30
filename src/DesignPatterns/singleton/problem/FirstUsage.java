@@ -2,10 +2,10 @@ package DesignPatterns.singleton.problem;
 
 public class FirstUsage {
 
-  private Logger logger;
+  private static Logger logger;
 
   public FirstUsage() {
-    this.logger = new Logger();
+    this.logger = Logger.getInstance(); // create an instance of an object
   }
 
   void use() {

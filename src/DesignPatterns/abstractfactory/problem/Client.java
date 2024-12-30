@@ -1,5 +1,11 @@
 package DesignPatterns.abstractfactory.problem;
 
+/**
+ * The Abstract Factory pattern provides an interface for creating families of related or dependent
+ * objects without specifying their concrete classes. It allows the creation of objects that are
+ * compatible with each other based on the chosen factory implementation. This pattern is useful for
+ * systems that need to be independent of how their products are created.
+ */
 public class Client {
 
   private Button button;

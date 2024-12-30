@@ -7,6 +7,8 @@ import DesignPatterns.factory.solution.AndroidDeveloper;
  * Factory Design Pattern: When there is super class and multiple subclasses and we want to get
  * object based on input and requirements.
  * Issues: Tight coupling with implementation.
+ *
+ * If client need to know about how the object is created, it's a tight coupling.
  */
 public class Main {
 
@@ -18,3 +20,5 @@ public class Main {
     System.out.println(webDeveloper.name() + " : " +webDeveloper.salary());
   }
 }
+
+

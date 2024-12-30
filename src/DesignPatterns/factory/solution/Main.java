@@ -12,6 +12,8 @@ public class Main {
 
   public static void main(String[] args) {
     Employee employee = EmployeeFactory.getEmployee("Android Developer");
+    Employee webDeveloper = EmployeeFactory.getEmployee("Web Developer");
     System.out.println(employee.salary());
+    System.out.println(webDeveloper.salary());
   }
 }

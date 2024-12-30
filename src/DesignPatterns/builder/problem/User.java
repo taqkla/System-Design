@@ -8,22 +8,31 @@ public class User {
   private String phoneNumber;
   private Address address;
 
-  public User(String name) {
-    this.name = name;
-  }
-  public User(int age) {
+  private String email;
+
+  public void setAge(int age) {
     this.age = age;
   }
 
-  public User(String name, String phoneNumber) {
+  public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
-  public User(String name, int age, String phoneNumber, Address address) {
+  public void setAddress(Address address) {
+    this.address = address;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+
+  public User(String name, int age, String phoneNumber, Address address, String email) {
     this.name = name;
     this.age = age;
     this.phoneNumber = phoneNumber;
     this.address = address;
+    this.email = email;
   }
 
   @Override
@@ -36,3 +45,6 @@ public class User {
         '}';
   }
 }
+
+
+

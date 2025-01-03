@@ -1,0 +1,17 @@
+Client
+  |
+  v
+[info_logger] -> log_message(1, "This is an info message.")
+      |
+      |--> Writes: "Info: This is an info message."
+      |
+      v
+[warning_logger] -> log_message(2, "This is a warning message.")
+      |
+      |--> Writes: "Warning: This is a warning message."
+      |
+      v
+[error_logger] -> log_message(3, "This is an error message.")
+      |
+      |--> Writes: "Error: This is an error message."
+

@@ -1,13 +1,13 @@
 package DesignPatterns.Structural.adapter.solution;
 
-public class AdapterCharger implements AppleCharger /** Expected interface */ {
+public class AppleAdapterCharger implements AppleCharger /** Expected interface */ {
 
   /**
    * Actual interface that we have.
    */
   private AndroidCharger androidCharger;
 
-  public AdapterCharger(AndroidCharger androidCharger) {
+  public AppleAdapterCharger(AndroidCharger androidCharger) {
     this.androidCharger = androidCharger;
   }
 

@@ -14,7 +14,7 @@ public class Client {
     // android charger - C-type pin
     // Adapter - white device
     // apple charger - lightening cable
-    AppleCharger appleCharger = new AdapterCharger(androidCharger);
+    AppleCharger appleCharger = new AppleAdapterCharger(androidCharger);
     Iphone iphone15 = new Iphone(appleCharger);
     iphone15.charge();
   }

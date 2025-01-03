@@ -10,6 +10,7 @@ public class Directory {
   private final ArrayList<Folder> folders;
   private final ArrayList<Directory> subDirectories;
 
+
   Directory(float size) {
     this.size = 0.1f;
     this.files = new ArrayList<>();

@@ -1,0 +1,11 @@
+1. Lack of abstraction
+
+  Process of turning on/off AC can be complex and has more steps, client need to be aware about all the steps.
+
+2. Undo/Redo Functionality
+  Undo/Redo capability need to be handled.
+
+3. Difficulty in code maintenance
+
+  How to support more command for more devices like bulb.
+

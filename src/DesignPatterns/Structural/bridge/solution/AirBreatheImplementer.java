@@ -4,7 +4,7 @@ public class AirBreatheImplementer implements BreatheImplementer {
 
   @Override
   public void breathe() {
-    System.out.println("Breathe through NOSE.\n"
+    System.out.println("Breathe through air.\n"
         + "    Inhales O2 from Air.\n"
         + "    Exhales CO2");
   }

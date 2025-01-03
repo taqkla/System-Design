@@ -12,8 +12,10 @@ public class Main {
   public static void main(String[] args) {
     LivingThings dog = new Dog(new AirBreatheImplementer());
     LivingThings bird = new Bird(new AirBreatheImplementer());
+    LivingThings fish = new Fish(new WaterBreatheImplementer());
     dog.breatheProcess();
     bird.breatheProcess();
+    fish.breatheProcess();
   }
 
 }

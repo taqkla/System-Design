@@ -40,7 +40,6 @@ public class User {
     return userBuilder;
   }
 
-
   // 1. Define another class with Builder(UserBuilder) suffix
   // 2. Define same properties in this class.
   // 3. Create setter to set the values, return the Builder object(this)

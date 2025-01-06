@@ -1,5 +1,6 @@
 package DesignPatterns.behavioural.command.solution;
 
+// Receiver
 public class AirConditioner {
 
   boolean isOn;

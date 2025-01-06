@@ -8,7 +8,7 @@ public class Main {
 
   public static void main(String[] args) {
 
-    Vehicle longRoadVehicle = new LongRoadVehicle();
+    Vehicle longRoadVehicle = new LongRoadVehicle(new HeavyDrive());
     longRoadVehicle.drive();
   }
 

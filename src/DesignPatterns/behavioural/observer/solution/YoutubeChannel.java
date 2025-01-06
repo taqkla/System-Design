@@ -30,9 +30,13 @@ public class YoutubeChannel {
 
   public void addVideo(String name) {
     this.videos.add(name); // state change in the current object.
+    sendNotificationToAllObserver(name);
+    // the notification to all the observers for the state change.
+  }
+
+  private void sendNotificationToAllObserver(String name) {
     this.subscribers.forEach(subscriber -> subscriber.notified(
         String.format("New video added with title: %s", name)));
-    // the notification to all the observers for the state change.
   }
 
   public ArrayList<Subscriber> getSubscribers() {

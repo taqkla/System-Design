@@ -4,18 +4,21 @@ public class Main {
 
   public static void main(String[] args) {
     // Create loggers
-    Logger infoLogger = new InfoLogger();
+    Logger logger = new InfoLogger();
     Logger warningLogger = new WarningLogger();
     Logger errorLogger = new ErrorLogger();
+    Logger issueLogger = new IssueLogger();
 
     // Set up the chain of responsibility
-    infoLogger.setNextLogger(warningLogger);
+    logger.setNextLogger(warningLogger);
     warningLogger.setNextLogger(errorLogger);
+    errorLogger.setNextLogger(issueLogger);
 
     // Log messages
-    infoLogger.logMessage(1, "This is an info message.");
-    infoLogger.logMessage(2, "This is a warning message.");
-    infoLogger.logMessage(3, "This is an error message.");
+    // logger.logMessage(1, "This is an info message.");
+    // logger.logMessage(2, "This is a warning message.");
+    // logger.logMessage(3, "This is an error message.");
+    logger.logMessage(4, "This is a panic message!");
 
   }
 

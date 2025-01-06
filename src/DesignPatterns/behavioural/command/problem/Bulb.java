@@ -1,9 +1,9 @@
-package DesignPatterns.behavioural.command.solution;
+package DesignPatterns.behavioural.command.problem;
 
-// Receiver
 public class Bulb {
 
-  boolean isOn;
+  private boolean isOn;
+
 
   public void turnOnBulb() {
     isOn = true;

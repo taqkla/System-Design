@@ -2,6 +2,7 @@ package DesignPatterns.behavioural.command.solution;
 
 import java.util.Stack;
 
+// Invoker
 public class RemoteControl {
 
   Command command;

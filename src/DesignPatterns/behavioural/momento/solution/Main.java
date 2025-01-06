@@ -8,8 +8,9 @@ package DesignPatterns.behavioural.momento.solution;
  * behavior, allowing the object to maintain its state history while preventing direct access to its
  * internal state.
  *
- * 1. Originator : Represents an object, for which state need to be saved and restored. 2. Momento :
- * holds the state of the momento. 3. Caretaker: managers the states.
+ * 1. Originator : Represents an object, for which state need to be saved and restored.
+ * 2. Momento : holds the state of the momento.
+ * 3. Caretaker: managers the states.
  */
 public class Main {
 
@@ -32,3 +33,8 @@ public class Main {
 
   }
 }
+
+
+
+
+

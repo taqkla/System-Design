@@ -2,7 +2,8 @@ package DesignPatterns.behavioural.strategy.solution;
 
 public class LongRoadVehicle extends Vehicle {
 
-  public LongRoadVehicle() {
-    super(new HeavyDrive());
+  private DriveStrategy driveStrategy;
+  public LongRoadVehicle(DriveStrategy driveStrategy) {
+    super(driveStrategy);
   }
 }

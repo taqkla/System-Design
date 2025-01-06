@@ -2,6 +2,7 @@ package DesignPatterns.behavioural.command.solution;
 
 public class TurnOffBulb implements Command {
 
+  // Receiver
   Bulb bulb;
 
 

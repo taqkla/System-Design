@@ -7,6 +7,11 @@ package DesignPatterns.behavioural.chainofresponsibility.problem;
  */
 public class Main {
 
+
+  // logger.Info()
+  // logger.Warning()
+  // logger.Error()
+
   public static void main(String[] args) {
     Logger.logMessage(1, "This is an log");
     Logger.logMessage(2, "This is an log");

@@ -13,10 +13,11 @@ Decoupling: The event bus decouples components, meaning that the producer of the
 Publish-Subscribe Pattern: The event bus operates on the publish-subscribe (pub-sub) pattern. When an event is published, all subscribers who are interested in that type of event get notified and can react accordingly.
 Event-Driven Architecture: It's often a part of an event-driven architecture where components react to events asynchronously. This leads to a loosely coupled and scalable system, where components operate independently based on events.
 Event Types: The system typically supports different types of events, which can be categorized and filtered so that only specific subscribers handle relevant events.
+<br>
 
 
-<h2> We have to design a message Bus supporting publisher-subscriber model/Event bus.
-It should support following operations </h2>
+<p> We have to design a message Bus supporting publisher-subscriber model/Event bus.
+It should support following operations </p>
 
 1. It should support multiple topics where messages can be published.
 2. Publisher should be able to publish a message to a particular topic.

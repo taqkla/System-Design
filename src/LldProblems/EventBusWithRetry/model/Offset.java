@@ -1,15 +1,15 @@
 package LldProblems.EventBusWithRetry.model;
 
-public class Index {
+public class Offset {
 
   int val;
 
-  public Index(int val) {
+  public Offset(int val) {
     this.val = val;
   }
 
-  public Index increment() {
-    return new Index(val + 1);
+  public Offset increment() {
+    return new Offset(val + 1);
   }
 
   public int getVal() {

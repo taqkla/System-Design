@@ -17,7 +17,7 @@ public class Bus {
   }
 
   public Topic createTopic(final String topicName) {
-    final Topic topic = new Topic(topicName, UUID.randomUUID().toString());
+    final Topic topic = Topic.createTopic(topicName, UUID.randomUUID().toString());
     TopicHandler topicHandler = new TopicHandler(topic);
     topicProcessors.put(topic.getTopicId(), topicHandler);
     System.out.println("Created topic: " + topic.getTopicName());
@@ -40,8 +40,7 @@ public class Bus {
     for (Subscriber Subscriber : topic.getSubscribers()) {
       if (Subscriber.getSubscriber().equals(subscriber)) {
         Subscriber.getOffset().set(newOffset);
-        System.out.println(
-            Subscriber.getSubscriber().getId() + " offset reset to: " + newOffset);
+        System.out.println(Subscriber.getSubscriber().getId() + " offset reset to: " + newOffset);
         new Thread(() -> topicProcessors.get(topic.getTopicId())
             .startSubscriberWorker(Subscriber)).start();
         break;

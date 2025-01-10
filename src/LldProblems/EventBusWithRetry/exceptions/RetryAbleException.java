@@ -1,2 +1,5 @@
-package LldProblems.EventBusWithRetry.exceptions;public class RetryAbleException {
+package LldProblems.EventBusWithRetry.exceptions;
+
+public class RetryAbleException extends Exception {
+
 }

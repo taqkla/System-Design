@@ -11,11 +11,15 @@ public class Topic {
   private final List<Subscriber> subscribers; // TODO: Change getter this to send only immutable list outside.
 
 
-  public Topic(final String topicName, final String topicId) {
+  private Topic(final String topicName, final String topicId) {
     this.topicName = topicName;
     this.topicId = topicId;
     this.messages = new ArrayList<>();
     this.subscribers = new ArrayList<>();
+  }
+
+  public static Topic createTopic(final String topicName, final String topicId) {
+    return new Topic(topicName, topicId);
   }
 
   public String getTopicName() {

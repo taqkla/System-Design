@@ -1,5 +1,5 @@
 package LldProblems.EventBusWithRetry.model;
 
-public class Subscription {
-
+public enum SubscriptionType {
+  PULL, PUSH
 }

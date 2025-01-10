@@ -5,7 +5,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Subscriber {
 
-  private final AtomicInteger offset;
+  private final AtomicInteger offset; // single thread can only update this at a time.
+
   private final ISubscriber subscriber;
 
   public Subscriber(final ISubscriber subscriber) {

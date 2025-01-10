@@ -8,7 +8,7 @@ import java.util.Map;
 public class TopicHandler {
 
   private final Topic topic;
-  private final Map<String, SubscriberWorker> subscriberWorkers;
+  private final Map<String /*subscriptionID*/, SubscriberWorker> subscriberWorkers;
 
   public TopicHandler(final Topic topic) {
     this.topic = topic;

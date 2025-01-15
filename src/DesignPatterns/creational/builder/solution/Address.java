@@ -13,7 +13,7 @@ public class Address {
         '}';
   }
 
-  Address(int zip, String street) {
+  public Address(int zip, String street) {
     this.zip = zip;
     this.street = street;
   }

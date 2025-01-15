@@ -14,6 +14,7 @@ public class InvoiceTracker {
     // BAD: We have created a dependency on a specific request implementation.
     // We should just have requestItems depend on a request method: `request`
     this.requester = new InvoiceRequester();
+
   }
 
   public void requestItems() {

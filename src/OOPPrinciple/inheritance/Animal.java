@@ -2,9 +2,9 @@ package OOPPrinciple.inheritance;
 
 class Animal {
 
+  public String name;
   private int energy = 100;
   private int hunger;
-  protected final String name;
 
   Animal(String name) {
     this.name = name;
@@ -14,6 +14,26 @@ class Animal {
   Animal() {
     System.out.println("This is a parent class empty constructor");
     this.name = "Prateek";
+  }
+
+  public int getEnergy() {
+    return energy;
+  }
+
+  public int getHunger() {
+    return hunger;
+  }
+
+  public void setEnergy(int energy) {
+    this.energy = energy;
+  }
+
+  public void setHunger(int hunger) {
+    this.hunger = hunger;
+  }
+
+  public String getName() {
+    return name;
   }
 
   protected void play() {
@@ -29,26 +49,6 @@ class Animal {
   protected void eat() {
     energy -= 1;
     hunger = 0;
-  }
-
-  protected void simulate() {
-    if (energy < 10) {
-      sleep();
-    } else if (hunger > 90) {
-      eat();
-    } else {
-      play();
-    }
-  }
-
-  /**
-   * Automatically simulates a behaviour of an animal for N actions.
-   */
-  public void simulateBehaviour(int n) {
-    while (n-- > 0) {
-      simulate();
-      System.out.println("Energy: " + energy + " Hunger: " + hunger);
-    }
   }
 }
 

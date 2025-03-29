@@ -11,11 +11,14 @@ public class Good {
 
   static class Account {
 
-    private int balance = 0;
+    private int balance = 0; // No other class should be able to change this.
 
     public void displayBalance() {
       System.out.println("The balance in your account is " + this.balance);
     }
+
+    // Any change happening to properties should be done from this class.
+    // Any class can trigger the change.
 
     public void credit(int amount) {
       this.balance += amount;
@@ -23,10 +26,6 @@ public class Good {
 
     public void debit(int amount) {
       this.balance -= amount;
-    }
-
-    public void provideCheckBook() {
-
     }
   }
 

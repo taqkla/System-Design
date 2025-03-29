@@ -47,3 +47,6 @@ public class DynamicPolymorphism {
     System.out.println("The area of rectangle is: " + shapes[1].getArea());
   }
 }
+
+
+

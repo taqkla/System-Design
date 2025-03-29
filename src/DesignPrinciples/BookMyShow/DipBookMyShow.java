@@ -29,10 +29,26 @@ class BookingService {
   }
 }
 
-class ShowTimeService {
+interface ShowTimeService {
 
-  int findShowtime(String movieTitle, String theater, int startTime) {
-    // write logic to find showtime.
+  int findShowtime(String movieTitle, String theater, int startTime);
+}
+
+class PvrShowTimeService implements ShowTimeService {
+
+  @Override
+  public int findShowtime(String movieTitle, String theater, int startTime) {
+    // fetch showtime from DB
+    return 0;
+  }
+}
+
+
+class ImaxShowTimeService implements ShowTimeService {
+
+  @Override
+  public int findShowtime(String movieTitle, String theater, int startTime) {
+    // fetch showtime from third party library
     return 0;
   }
 }

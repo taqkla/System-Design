@@ -8,6 +8,8 @@ public class Main {
 
     System.out.println(account1.getBalance());
     System.out.println(account2.getBalance());
+    account1.deposit(123);
+    account2.deposit(321);
 
     account1.addInterest();
     account2.addInterest();

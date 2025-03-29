@@ -8,29 +8,19 @@ class Registration {
 
 
   boolean validate(String email) {
-    if(email == null || email.isEmpty() || !email.contains("@") ) {
-      return false;
-    }
+    Validate.validateEmail(email);
     return true;
   }
 }
 
 class Login {
 
-  boolean validate(String email) {
-    if(email == null || email.isEmpty() || !email.contains("@") ) {
-      return false;
-    }
+  boolean validate(String email, String password) {
+    Validate.validateEmail(email);
     return true;
+
   }
 }
 
 
-class Validate {
-  boolean validate(String email) {
-    if(email == null || email.isEmpty() || !email.contains("@") ) {
-      return false;
-    }
-    return true;
-  }
-}
+

@@ -3,10 +3,13 @@ package OOPPrinciple.polymorphism;
 class Calculator {
 
   /**
-   * Function overloading : Polymorphism enables us to define methods with same
-   * name and different params in same class.
-   * Function Overloading - Static polymorphism
-   *
+   * Polymorphism is the ability to treat the objects of different class as an object of some single superclass.
+   * Polymorphism is an ability to treat anything with different forms as an single entity.
+   */
+
+  /**
+   * Function overloading : Polymorphism enables us to define methods with same name and different
+   * params in same class. Function Overloading - Static polymorphism
    */
   int sum(int a, int b) {
     return a + b;

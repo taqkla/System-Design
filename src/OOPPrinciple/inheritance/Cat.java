@@ -3,12 +3,12 @@ package OOPPrinciple.inheritance;
 // access modes -- public private protected
 // default
 // Using constructors we initialize the member variables.
-// super keyword helps the child to access the parent variables or fuctions.
+// super keyword helps the child to access the parent variables or functions.
 
-public class Cat /* Child */ extends Animal /* Parent */ {
+public class Cat /* Child(Subclass) */ extends Animal /* Parent(Superclass) */ {
 
   private String type;
-  public String name;
+  private String name;
 
   public Cat(String name) {
     super("Dolie");
@@ -44,5 +44,25 @@ public class Cat /* Child */ extends Animal /* Parent */ {
   //     makeSound();
   //   }
   // }
+
+  protected void simulate() {
+    if (this.getEnergy() < 10) {
+      sleep();
+    } else if (this.getHunger() > 90) {
+      eat();
+    } else {
+      play();
+    }
+  }
+
+  /**
+   * Automatically simulates a behaviour of an animal for N actions.
+   */
+  public void simulateBehaviour(int n) {
+    while (n-- > 0) {
+      simulate();
+      System.out.println("Energy: " + getEnergy() + " Hunger: " + getHunger());
+    }
+  }
 
 }

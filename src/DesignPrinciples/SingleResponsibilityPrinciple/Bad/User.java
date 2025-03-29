@@ -28,9 +28,19 @@ public class User {
 
   private boolean verifyCredentials(String username, String password) {
     // put all the logic for verification of credentials.
+    // password type to SAML/ OTP based/ Oauth
+    // entire logic need to be changed here.
     return true;
   }
 }
 
 // Just one question if one class will have only one responsibility to change
+// Possible solution - Create a class for CredentialManagement(CredentialManager) and also create a
+// UserSetting class that handles the SettingManagement.
+
+// Every class that we create needs to look for extensibility.
+
+
+
+
 // then won't number of classes will increase ? Also does SRP adheres to inheritance ?

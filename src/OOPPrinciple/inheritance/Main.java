@@ -11,12 +11,14 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("Hello world!");
 
-    // Cat cat = new Cat();
-    // Cat cat2 = new Cat("Dolie");
-    // System.out.println(cat.energy);
+    Cat cat = new Cat();
+    Cat cat2 = new Cat("Dolie");
+    System.out.println(cat.getEnergy());
     // cat.simulateBehaviour(5);
     // ((Cat) cat).makeSound();
     // System.out.println(ExpainPoly.add(10, 5));
+
+    Animal whale = new Whale("BlueWhale");
 
     // Animal cat = new Cat("Furry");
     // Cat cat2 = new Cat();

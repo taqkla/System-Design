@@ -5,6 +5,7 @@ public class Bad {
 
   static class Animal {
 
+    private String animalType = "DOG/CAT/HUMAN";
     private int energy = 100;
     private int hunger;
 
@@ -29,6 +30,7 @@ public class Bad {
       hunger = 0;
       displayCharacteristics();
     }
+
   }
 
   // Client
@@ -39,7 +41,7 @@ public class Bad {
       // This behaviour should not be exposed.
       if (animal.energy <= 10) {
         animal.sleep();
-      } else if (animal.hunger >= 90) {
+      } else if (animal.hunger >= 80) {
         animal.eat();
       } else {
         animal.play();

@@ -12,6 +12,8 @@ package DesignPrinciples.LiskovSubstitutionPrinciple.Bad;
  * charging station.If replacing a regular car with an electric car breaks the parking lot's
  * functionality (e.g., no charging stations), then the parking lot is not adhering to the Liskov
  * Substitution Principle.
+ * ParkingLot lot = new RegularParkingLot();
+ * ParkingLot lot = new ElectricParkingLot();
  */
 public class Invoice {
 

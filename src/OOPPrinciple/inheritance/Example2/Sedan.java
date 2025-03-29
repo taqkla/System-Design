@@ -4,4 +4,5 @@ public interface Sedan {
 
   String getModelName();
   String getEngineType();
+  String getCompany();
 }

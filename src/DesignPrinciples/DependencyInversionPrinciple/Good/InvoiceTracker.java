@@ -5,7 +5,7 @@ import java.util.List;
 public class InvoiceTracker {
 
   private final List<String> items;
-  private final InvoiceRequester requester;
+  private final InvoiceRequester requester; // http based, ws based
 
   InvoiceTracker(List<String> items, InvoiceRequester requester) {
     this.items = items;

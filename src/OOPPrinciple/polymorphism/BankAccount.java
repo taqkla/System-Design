@@ -31,6 +31,8 @@ public class BankAccount {
   public static void main(String[] args) {
     BankAccount svc = new SavingAccount();
     svc.calculateInterest();
+    BankAccount bankAccount = new BankAccount();
+    bankAccount.calculateInterest();
   }
 }
 

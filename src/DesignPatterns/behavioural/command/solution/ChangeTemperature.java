@@ -2,7 +2,7 @@ package DesignPatterns.behavioural.command.solution;
 
 public class ChangeTemperature implements Command {
 
-  AirConditioner ac;
+  AirConditioner ac; // has-a with actual implementation
 
   public ChangeTemperature(AirConditioner ac) {
     this.ac = ac;

@@ -14,7 +14,7 @@ public class GroupService {
 
   public static final Amount NIL = new Amount(Currency.USD, 0);
   private final ExpenseService expenseService;
-  private final Map<String, Group> groups;
+  private final Map<String, Group> groups; // groupId, group
 
   public GroupService(ExpenseService expenseService, Map<String, Group> groups) {
     this.expenseService = expenseService;
@@ -22,6 +22,10 @@ public class GroupService {
   }
 
   public PaymentGraph getGroupPaymentGraph(final String groupId, final String userId) throws IllegalAccessException {
+    // user balance for a particular group
+    // A -> 20
+    // A -> -100
+    // A -> 320
     return expenseService.getPaymentGraph(getBalances(groupId, userId));
   }
 
@@ -37,6 +41,7 @@ public class GroupService {
     return new BalanceMap(resultBalances);
   }
 
+  // userid, BalanceMap
   public BalanceMap getBalances(final String groupId, final String userId) throws IllegalAccessException {
     if (!groups.get(groupId).getUsers().contains(userId)) {
       throw new IllegalAccessException();

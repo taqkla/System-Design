@@ -52,7 +52,7 @@ class Booking {
     this.seats = seats;
   }
 
-  // Methods related to booking and ticket generation, auth, setting should not be in this class.
+  // Methods related to booking only such as createBooking, cancelBooking.  Ticket generation, auth, setting should not be in this class.
 }
 
 class User {

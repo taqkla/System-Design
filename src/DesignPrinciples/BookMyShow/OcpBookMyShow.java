@@ -7,13 +7,15 @@ class BookingV2 {
   private final int showtime;
   private final int seats;
 
+  // private final String vipInfo; // don't ever do that.
+
   BookingV2(UserV2 userId, int showtime, int seats) {
     this.user = userId;
     this.showtime = showtime;
     this.seats = seats;
   }
 
-  void generateTicket() {
+  void generateBooking() {
     // Logic to generate a ticket
   }
 
@@ -44,8 +46,8 @@ class VIPBooking extends BookingV2 {
     this.extras = extras;
   }
 
-  // Override the generateTicket method to add extra information
-  void generateTicket() {
+  // Override the generateBooking method to add extra information
+  void generateBooking() {
     // Generate a VIP ticket with extras
   }
 }

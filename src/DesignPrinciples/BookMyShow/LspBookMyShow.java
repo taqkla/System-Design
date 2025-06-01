@@ -15,9 +15,9 @@ public class LspBookMyShow {
     UserV2 user1 = new UserV2("Prateek", "abcd@gmail.com");
     UserV2 user2 = new UserV2("Vaibhav", "abcd@gmail.com");
     BookingV2 regularBooking = new BookingV2(user1, 1, 1); // --- working file
-    BookingV2 vipBooking = new VIPBooking(user2, 1, 1, 1);
+    BookingV2 vipBooking = new VIPBooking(user2, 1, 1, 1); // adding this line, code should work correctly;
 
-    regularBooking.generateTicket();
-    vipBooking.generateTicket();
+    regularBooking.generateBooking();
+    vipBooking.generateBooking();
   }
 }

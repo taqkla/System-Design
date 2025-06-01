@@ -1,4 +1,4 @@
-package DesignPrinciples;
+package DesignPrinciples.dry;
 
 public class Validate {
   public static boolean validateEmail(String email) {

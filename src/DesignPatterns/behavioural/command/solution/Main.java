@@ -6,14 +6,14 @@ package DesignPatterns.behavioural.command.solution;
 public class Main {
 
   public static void main(String[] args) {
-    //  Receiver
+    //  Receiver - Actual Implementation
     AirConditioner ac = new AirConditioner();
     Bulb bulb = new Bulb();
 
-    // Invoker
+    // Invoker - Client
     RemoteControl remote = new RemoteControl();
 
-    // Command
+    // Command - set of commands.
     remote.setCommand(new TurnOnAc(ac));
     remote.pressButton();
     remote.setCommand(new TurnOnBulb(bulb));

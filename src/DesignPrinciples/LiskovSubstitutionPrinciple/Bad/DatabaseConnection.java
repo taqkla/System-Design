@@ -9,6 +9,8 @@ public class DatabaseConnection extends Invoice{
 
   @Override
   public void save() {
-    throw new UnsupportedOperationException("Not supported!");
+    System.out.println("Saved to DB");
   }
 }
+
+// DatabaseDao and Invoice both class provide save capability..

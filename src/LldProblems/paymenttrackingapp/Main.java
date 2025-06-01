@@ -6,7 +6,6 @@ import LldProblems.paymenttrackingapp.model.Amount;
 import LldProblems.paymenttrackingapp.model.BalanceMap;
 import LldProblems.paymenttrackingapp.model.Expense;
 import LldProblems.paymenttrackingapp.model.Group;
-import LldProblems.paymenttrackingapp.model.User;
 import LldProblems.paymenttrackingapp.service.ExpenseService;
 import LldProblems.paymenttrackingapp.service.GroupService;
 import java.util.ArrayList;
@@ -21,11 +20,11 @@ public class Main {
     final var balances = groupService.getBalances("123", "A");
     final var balanceMap = balances.getBalances();
     // It should be 50.0
-    System.out.println(balanceMap.get("A").getAmount());
+    System.out.println("A will get the amount = " + balanceMap.get("A").getAmount());
     // It should be 30.0
-    System.out.println(balanceMap.get("B").getAmount());
+    System.out.println("B will get the amount = " + balanceMap.get("B").getAmount());
     // It should be -80.0
-    System.out.println(balanceMap.get("C").getAmount());
+    System.out.println("C will owe the amount = " +  balanceMap.get("C").getAmount());
   }
 
   private static HashMap<String, Group> getGroups() {

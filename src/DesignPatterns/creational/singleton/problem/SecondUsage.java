@@ -5,10 +5,11 @@ public class SecondUsage {
   private static Logger logger;
 
   public SecondUsage() {
-    this.logger = Logger.getInstance();
+    this.logger = new Logger();
   }
 
   void use() {
+    System.out.println(logger.hashCode());
     /* logic */
     this.logger.printLogCount();
     this.logger.log("Post Entry Deleted!");

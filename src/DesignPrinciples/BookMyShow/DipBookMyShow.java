@@ -11,9 +11,10 @@ public class DipBookMyShow {
 // In JavaScript, you can achieve DIP by using dependency injection, which allows you to inject dependencies(e.g. entities, services) into a class instead of creating them directly inside the class.
 
 
+// High Level Module
 class BookingService {
 
-  private final ShowTimeService showtimeService;
+  private final ShowTimeService showtimeService; // High Level Module
 
   BookingService(ShowTimeService showtimeService) {
     this.showtimeService = showtimeService;
@@ -45,6 +46,15 @@ class PvrShowTimeService implements ShowTimeService {
 
 
 class ImaxShowTimeService implements ShowTimeService {
+
+  @Override
+  public int findShowtime(String movieTitle, String theater, int startTime) {
+    // fetch showtime from third party library
+    return 0;
+  }
+}
+
+class TheatreShowTimeService implements ShowTimeService {
 
   @Override
   public int findShowtime(String movieTitle, String theater, int startTime) {

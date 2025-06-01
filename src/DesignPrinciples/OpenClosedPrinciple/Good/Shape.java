@@ -9,6 +9,8 @@ public abstract class Shape {
     this.area = area;
   }
 
+
+  // common code needed for all childs.
   public double getArea() {
     return area;
     // this logic is common to all childs.

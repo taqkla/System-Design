@@ -1,13 +1,11 @@
 package DesignPrinciples.DependencyInversionPrinciple.Bad;
 
-
-// request methods -- Http, tcp, ws, http2.0
-public class InvoiceRequester {
+public class TcpInvoiceRequester {
 
   private String request_methods;
 
-  InvoiceRequester() {
-    this.request_methods = "HTTP";
+  TcpInvoiceRequester() {
+    this.request_methods = "TCP";
   }
 
   public void requestItem(String item) {

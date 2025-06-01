@@ -13,14 +13,18 @@ public class RateLimiterService {
   private static RateLimiterService rateLimiterService;
   private final Map<Configuration, RateLimitingStrategy> rateLimiterMap = new HashMap<>();
 
-  private RateLimiterService(Configuration configuration, RateLimitingAlgorithm type) {
+  private RateLimiterService() {
+  }
+
+  public void addConfiguration(Configuration configuration, RateLimitingAlgorithm type) {
     rateLimiterMap.put(configuration, RateLimitingFactory.getInstance(type, configuration));
   }
 
   public synchronized static RateLimiterService getInstance(Configuration configuration,
       RateLimitingAlgorithm type) {
     if (rateLimiterService == null) {
-      rateLimiterService = new RateLimiterService(configuration, type);
+      rateLimiterService = new RateLimiterService();
+      rateLimiterService.addConfiguration(configuration, type);
     }
     return rateLimiterService;
   }
@@ -30,6 +34,7 @@ public class RateLimiterService {
       System.out.println(Thread.currentThread().getName() + " -> able to access the application");
       return true;
     } else {
+      // Handle the case of disallowed request.
       System.out.println(
           Thread.currentThread().getName() + " -> Too many request, Please try after some time");
       return false;

@@ -29,7 +29,30 @@ class BookingV3 {
   void cancelBooking() {
     // Logic to cancel a booking
   }
+
+  void findShowTime() {
+    // logic to find showtime;
+  }
 }
+
+// Wrong interface
+interface BadBooking {
+ void generateBooking();
+  void cancelBooking();
+  void findShowTime();
+}
+
+
+// Better Interface
+interface IspBooking {
+  void generateBooking();
+  void cancelBooking();
+}
+
+interface showTimeService {
+  void findShowTime();
+}
+
 
 /**
  * By splitting the monolithic `Booking` class into smaller classes, each with a specific

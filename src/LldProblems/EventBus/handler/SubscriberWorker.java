@@ -18,6 +18,7 @@ public class SubscriberWorker implements Runnable {
   public void run() {
     synchronized (Subscriber) {
       do {
+        // Actual code that needs to be executed for consumption
         int curOffset = Subscriber.getOffset().get();
         while (curOffset >= topic.getMessages().size()) {
           try {

@@ -12,5 +12,8 @@ public class Main {
         List.of("Apple", "Banana"), new WsInvoiceRequester());
     invoiceTracker.requestItems();
     invoiceTracker2.requestItems();
+
+    InvoiceTracker invoiceTracker3 = new InvoiceTracker(List.of("Apple", "Banana"), new TcpInvoiceRequester());
+    invoiceTracker3.requestItems();
   }
 }

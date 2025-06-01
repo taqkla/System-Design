@@ -12,3 +12,5 @@ public class InvoicePrinter extends Invoice {
   }
 
 }
+
+// InvoicePrinter is not providing the capability to save.

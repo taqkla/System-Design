@@ -4,6 +4,6 @@ public class OffRoadVehicle extends Vehicle {
 
   @Override
   public void drive() {
-    System.out.println("Heavy Drive Capability");
+    System.out.println("Normal Drive Capability");
   }
 }

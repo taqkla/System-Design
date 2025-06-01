@@ -13,9 +13,11 @@ public class Main {
     LivingThings dog = new Dog(new AirBreatheImplementer());
     LivingThings bird = new Bird(new AirBreatheImplementer());
     LivingThings fish = new Fish(new WaterBreatheImplementer());
+    LivingThings plant = new Tree(new PlantBreatheImplementer());
     dog.breatheProcess();
     bird.breatheProcess();
     fish.breatheProcess();
+    plant.breatheProcess();
   }
 
 }

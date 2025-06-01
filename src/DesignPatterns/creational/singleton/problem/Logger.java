@@ -5,22 +5,11 @@ import java.util.ArrayList;
 public class Logger {
 
   private ArrayList<String> logs; // in-memory storage
-  private static Logger logger = new Logger(); // static singleton
 
 
   // Restrict the creation of object?
-  private Logger() {
+  Logger() {
     this.logs = new ArrayList<>();
-  }
-
-  public static Logger getInstance() {
-    // multithreading
-    // lazy singleton
-    // if (logger == null) {
-    //   logger = new Logger();
-    // }
-
-    return logger; // creating this object everytime this method is called.
   }
 
 

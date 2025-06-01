@@ -17,7 +17,7 @@ public class TopicHandler {
 
   public void publish() {
     for (Subscriber Subscriber : topic.getSubscribers()) {
-      startSubscriberWorker(Subscriber);
+      startSubscriberWorker(Subscriber); // start async worker to consume the message
     }
   }
 

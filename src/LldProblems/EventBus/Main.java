@@ -19,21 +19,21 @@ public class Main {
 
     // subscribe to topic
     Bus.subscribe(sub1, topic1);
-    // Bus.subscribe(sub2, topic1);
+    Bus.subscribe(sub2, topic1);
 
     final SleepingSubscriber sub3 = new SleepingSubscriber("sub3", 5000);
     Bus.subscribe(sub3, topic2);
 
 
-    Bus.publish(topic1, new Message("m1"));
-    Bus.publish(topic1, new Message("m2"));
+    Bus.publish(topic1, new Message("m1", "1", null));
+    Bus.publish(topic1, new Message("m2","2", null));
 
-    // Bus.publish(topic2, new Message("m3"));
+    Bus.publish(topic2, new Message("m3", "54", null));
 
-    Thread.sleep(15000);
-    Bus.resetOffset(topic1, sub1, 0);
-    // Bus.publish(topic2, new Message("m4"));
-    Bus.publish(topic1, new Message("m5"));
+    // Thread.sleep(15000);
+    // Bus.resetOffset(topic1, sub1, 0);
+    // // Bus.publish(topic2, new Message("m4"));
+    // Bus.publish(topic1, new Message("m5", "5", null));
 
   }
 }

@@ -6,6 +6,8 @@ public class Main {
 
     Coffee coffee = new CapacchinoCoffee();
     System.out.println(coffee.cost());
+
+    Coffee coffee1 = new CapacchinoWithCoffeeBeans();
   }
 
 }

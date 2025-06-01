@@ -5,21 +5,29 @@ import java.util.ArrayList;
 public class Logger {
 
   private ArrayList<String> logs;
-  private static Logger logger = new Logger(); // static singleton
+  private static Logger logger;
+  // private static Logger logger = new Logger(); // static singleton -- eager singleton
 
 
   private Logger() {
     this.logs = new ArrayList<>();
   }
 
+
+  // t1, t2, t4....  - time0
   public static Logger getLogger() {
     // return logger;
     // lazy singleton
     // 100 lines of code here.
+
+    // t1, t2, t4....  - time1
     if (logger == null) {
       // user and post class objects will try to execute this line at the same time using different threads.
+      // t1, t2, t4....  - time2
       synchronized (Logger.class) {
-        logger = new Logger();
+        if (logger == null) {
+          logger = new Logger();
+        }
       }
     }
     // 100 lines of code here.

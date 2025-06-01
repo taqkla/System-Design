@@ -14,7 +14,7 @@ public class YoutubeChannel {
 
   YoutubeChannel(String name) {
     this.name = name;
-    this.subscribers = new ArrayList<>();
+    this.subscribers = new ArrayList<>(); // list of observer objects.
     this.videos = new ArrayList<>();
   }
 

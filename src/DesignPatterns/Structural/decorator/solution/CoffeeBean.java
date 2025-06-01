@@ -1,8 +1,8 @@
 package DesignPatterns.Structural.decorator.solution;
 
-public class CoffeeBean extends ExtraToppings {
+public class CoffeeBean extends ExtraToppings /*is a relationship with Coffee */ {
 
-  Coffee coffee;
+  Coffee coffee; // has a relationship with coffee class
 
   public CoffeeBean(Coffee coffee) {
     this.coffee = coffee;

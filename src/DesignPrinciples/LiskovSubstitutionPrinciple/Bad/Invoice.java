@@ -6,7 +6,7 @@ package DesignPrinciples.LiskovSubstitutionPrinciple.Bad;
  * A a = new A(); ---> A a = new B();
  * Subclass should extend the capability of parent class not narrow it down.
  *
- * BankAccount: Imagine a parking lot that can accommodate regular cars.Now, if you replace a regular
+ * Example: Imagine a parking lot that can accommodate regular cars.Now, if you replace a regular
  * car with an electric car, the parking lot should still function correctly. The electric car
  * should be able to fit into the parking space, and the parking lot should be able to provide a
  * charging station.If replacing a regular car with an electric car breaks the parking lot's
@@ -14,19 +14,21 @@ package DesignPrinciples.LiskovSubstitutionPrinciple.Bad;
  * Substitution Principle.
  * ParkingLot lot = new RegularParkingLot();
  * ParkingLot lot = new ElectricParkingLot();
+ * Old capabilities - parking, entry, exit, payment...
+ * New capabilities - parking, entry, exit, payment, charging. --- correct
+ * New capabilities - entry, exit, payment, charging. --- correct
  */
 public class Invoice {
 
   private final DatabaseConnection databaseConnection;
-  private final String filePath;
 
 
   public Invoice(DatabaseConnection databaseConnection, String filePath) {
     this.databaseConnection = databaseConnection;
-    this.filePath = filePath;
   }
 
   public void save() {
+    // code
     // save to db or file based on some params.
   }
 }

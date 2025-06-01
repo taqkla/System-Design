@@ -1,7 +1,7 @@
 package DesignPrinciples.OpenClosedPrinciple.Example2.Bad;
 
-
-// Save the invoice to file.
+// Voilates both SRP and OCP.
+// Save the invoice.
 public class InvoiceDao {
 
   private String /*Invoice */ invoice;

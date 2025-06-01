@@ -6,6 +6,8 @@ import java.util.Stack;
 public class RemoteControl {
 
   Command command;
+
+  // [TurnOnAc]
   Stack<Command> commandHistory = new Stack<>();
 
   public void setCommand(Command command) {

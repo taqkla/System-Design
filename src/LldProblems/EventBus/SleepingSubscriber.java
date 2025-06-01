@@ -3,6 +3,7 @@ package LldProblems.EventBus;
 import LldProblems.EventBus.interfaces.ISubscriber;
 import LldProblems.EventBus.model.Message;
 
+// concrete implementation of Subscriber
 public class SleepingSubscriber implements ISubscriber {
 
   private final String id;

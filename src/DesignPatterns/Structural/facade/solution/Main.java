@@ -14,6 +14,7 @@ public class Main {
     // Make ledger entry
     // Send notification
 
+    // Dependency Injection
     Account account = new Account(1, "Prateek");
     Wallet wallet = new Wallet(100);
     SecurityCode code = new SecurityCode(435);

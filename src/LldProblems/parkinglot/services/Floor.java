@@ -71,7 +71,5 @@ public class Floor {
       }
     }
     return ParkingLot.INSTANCE.getParkingStrategy().park(availableSpaces);
-
-
   }
 }

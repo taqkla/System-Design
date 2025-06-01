@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * groupId --- pay amount
+ * userId --- pay amount
  */
 public class BalanceMap {
 
-  private final Map<String, Amount> balances;
+  private final Map<String, Amount> balances; // userid, balance
 
   public BalanceMap() {
     this.balances = new HashMap<>();

@@ -31,12 +31,12 @@ public class User {
     return address;
   }
 
-  public UserBuilder toBuilder(User user) {
+  public UserBuilder toBuilder() {
     UserBuilder userBuilder = new UserBuilder();
-    userBuilder.setName(user.name);
-    userBuilder.setAge(user.age);
-    userBuilder.setPhoneNumber(user.phoneNumber);
-    userBuilder.setAddress(user.address);
+    userBuilder.setName(this.name);
+    userBuilder.setAge(this.age);
+    userBuilder.setPhoneNumber(this.phoneNumber);
+    userBuilder.setAddress(this.address);
     return userBuilder;
   }
 

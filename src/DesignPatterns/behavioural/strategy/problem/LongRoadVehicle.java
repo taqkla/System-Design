@@ -5,6 +5,6 @@ public class LongRoadVehicle extends Vehicle {
   @Override
   public void drive() {
     // big algorithm
-    System.out.println("Heavy Drive Capability");
+    System.out.println("Heaviest Drive Capability");
   }
 }

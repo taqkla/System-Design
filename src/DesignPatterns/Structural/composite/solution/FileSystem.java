@@ -1,8 +1,29 @@
 package DesignPatterns.Structural.composite.solution;
 
-public interface FileSystem {
+import java.util.ArrayList;
+import java.util.List;
 
-  float getSize();
+public abstract class FileSystem {
+
+  private ArrayList<FileSystem> childs;
+
+  private final float size;
+
+  protected FileSystem(float size) {
+    this.childs = new ArrayList<>();
+    this.size = size;
+  }
+
+
+  public float getSize() {
+    float totalSize = this.size;
+    for (int i = 0; i < childs.size(); i++) {
+      totalSize += childs.size();
+    }
+    return totalSize;
+  }
+
+  public void addChilds(List<FileSystem> childs) {
+    this.childs.addAll(childs);
+  }
 }
-
-// all the composite and singular objects should be implementing this interface to allow us to use all object in a similar.

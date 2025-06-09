@@ -1,15 +1,10 @@
 package DesignPatterns.Structural.composite.solution;
 
 //Singular class
-public class File implements FileSystem {
+public class File extends FileSystem {
 
-  private float size;
 
   public File(float size) {
-    this.size = size;
-  }
-
-  public float getSize() {
-    return this.size;
+    super(size);
   }
 }

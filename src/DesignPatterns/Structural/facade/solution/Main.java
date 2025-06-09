@@ -15,13 +15,13 @@ public class Main {
     // Send notification
 
     // Dependency Injection
-    Account account = new Account(1, "Prateek");
-    Wallet wallet = new Wallet(100);
-    SecurityCode code = new SecurityCode(435);
-    Ledger ledger = new Ledger();
-    Notification notification = new Notification();
+    // Account account = new Account(1, "Prateek");
+    // Wallet wallet = new Wallet(100);
+    // SecurityCode code = new SecurityCode(435);
+    // Ledger ledger = new Ledger();
+    // Notification notification = new Notification();
 
-    AccountFacade facade = new AccountFacade(account, wallet, code, ledger, notification);
+    AccountFacade facade = new AccountFacade();
 
     facade.addMoneyToWallet(2000);
     facade.deductMoneyFromWallet(432);

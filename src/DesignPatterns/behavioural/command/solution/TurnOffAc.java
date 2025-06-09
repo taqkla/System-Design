@@ -2,7 +2,7 @@ package DesignPatterns.behavioural.command.solution;
 
 public class TurnOffAc implements Command {
 
-  AirConditioner ac;
+  AirConditioner ac; // concrete objects
 
   public TurnOffAc(AirConditioner ac) {
     this.ac = ac;

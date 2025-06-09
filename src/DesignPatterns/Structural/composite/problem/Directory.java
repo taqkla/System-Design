@@ -27,5 +27,17 @@ public class Directory {
     return totalSize + this.size;
   }
 
+  public void addFile(File file) {
+    this.files.add(file);
+  }
+
+  public void addSubFolder(Folder subFolder) {
+    this.folders.add(subFolder);
+  }
+
+  public void addSubDirectories(Directory subDirectory) {
+    this.subDirectories.add(subDirectory);
+  }
+
 
 }

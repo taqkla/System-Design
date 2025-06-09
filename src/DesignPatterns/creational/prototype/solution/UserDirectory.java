@@ -50,3 +50,10 @@ public class UserDirectory implements Cloneable {
   }
 
 }
+
+
+// Implementation
+
+// 1. Create the interface with clone method;
+// 2. Implement this interface for all the classes that you need to create copy of.
+// client can call obj.clone() to get a new copy of obj.

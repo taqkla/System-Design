@@ -12,4 +12,8 @@ public class Vehicle {
     this.driveStrategy.drive();
   }
 
+  public void setDriveStrategy(DriveStrategy driveStrategy) {
+    this.driveStrategy = driveStrategy;
+  }
+
 }

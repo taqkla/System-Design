@@ -13,7 +13,7 @@ public class Client {
 
   Client(String osName) {
     if (osName.equals("mac os x")) {
-      this.button = new MacButton();
+      this.button = new MacButton(); // concrete class
       this.checkBox = new MacCheckBox();
     } else {
       this.button = new WindowButton();

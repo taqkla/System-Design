@@ -12,6 +12,7 @@ public class LoggerWithChainOfResponsibility {
     logger.setNextLogger(warningLogger);
     warningLogger.setNextLogger(errorLogger);
     errorLogger.setNextLogger(issueLogger);
+    issueLogger.setNextLogger(new HighSeverityLogger());
     return logger;
 
     // Logger = InfoLogger ---> nextLogger = Warning Logger ---> nextLogger =  ErrorLogger ---> nextLogger =  IssueLogger

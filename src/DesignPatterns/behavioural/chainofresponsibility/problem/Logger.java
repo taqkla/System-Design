@@ -19,3 +19,8 @@ public class Logger {
   }
 
 }
+
+
+// InfoHandler - level1
+// WarningHandler - level2
+// ErrorHandler - level3

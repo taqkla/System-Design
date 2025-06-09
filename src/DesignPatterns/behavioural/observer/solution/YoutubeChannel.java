@@ -30,13 +30,17 @@ public class YoutubeChannel {
 
   public void addVideo(String name) {
     this.videos.add(name); // state change in the current object.
-    sendNotificationToAllObserver(name);
+    sendNotificationToAllObserver(String.format("New video added with title: %s", name));
     // the notification to all the observers for the state change.
   }
 
+  public void deleteVideo(String name) {
+    this.videos.remove(name);
+    sendNotificationToAllObserver(String.format("A video is deleted with title: %s", name));
+  }
+
   private void sendNotificationToAllObserver(String name) {
-    this.subscribers.forEach(subscriber -> subscriber.notified(
-        String.format("New video added with title: %s", name)));
+    this.subscribers.forEach(subscriber -> subscriber.notified(name));
   }
 
   public ArrayList<Subscriber> getSubscribers() {

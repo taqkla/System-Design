@@ -18,6 +18,9 @@ public class Main {
     bird.breatheProcess();
     fish.breatheProcess();
     plant.breatheProcess();
+
+    LivingThings cat = new Cat(new AirBreatheImplementer());
+    cat.breatheProcess();
   }
 
 }

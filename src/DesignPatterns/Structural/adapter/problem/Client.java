@@ -16,5 +16,10 @@ public class Client {
     AndroidCharger androidCharger = new NomadCharger();
     Android android = new Android(androidCharger);
     android.charge();
+
+
+    // Requirement is charge an iphone via NomadCharger
+    // iphone = new Iphone(AndroidCharger()) // incompatible
+    // iphone.charge()
   }
 }

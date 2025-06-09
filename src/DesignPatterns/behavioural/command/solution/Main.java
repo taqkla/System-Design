@@ -9,6 +9,7 @@ public class Main {
     //  Receiver - Actual Implementation
     AirConditioner ac = new AirConditioner();
     Bulb bulb = new Bulb();
+    CoffeeMachine coffeeMachine = new CoffeeMachine();
 
     // Invoker - Client
     RemoteControl remote = new RemoteControl();
@@ -17,6 +18,9 @@ public class Main {
     remote.setCommand(new TurnOnAc(ac));
     remote.pressButton();
     remote.setCommand(new TurnOnBulb(bulb));
+    remote.pressButton();
+
+    remote.setCommand(new TurnOnCoffeeMachine(coffeeMachine));
     remote.pressButton();
 
     remote.undo();

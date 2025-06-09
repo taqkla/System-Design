@@ -10,6 +10,9 @@ public class Main {
 
     Vehicle longRoadVehicle = new LongRoadVehicle(new HeavyDrive());
     longRoadVehicle.drive();
+    longRoadVehicle.setDriveStrategy(new NormalDrive());
+    longRoadVehicle.drive();
+
   }
 
 }

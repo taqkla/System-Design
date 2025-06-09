@@ -1,5 +1,7 @@
 package DesignPatterns.Structural.bridge.solution;
 
+
+// high level abstraction
 public abstract class LivingThings {
 
   /**

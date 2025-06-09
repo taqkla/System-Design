@@ -7,3 +7,7 @@ public class OffRoadVehicle extends Vehicle {
     System.out.println("Normal Drive Capability");
   }
 }
+
+// 2 algorithms -
+// Normal Drive Algorithm.
+// Heavy Drive Algorithm.

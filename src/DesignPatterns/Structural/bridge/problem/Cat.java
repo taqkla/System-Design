@@ -1,6 +1,6 @@
 package DesignPatterns.Structural.bridge.problem;
 
-public class Dog extends LivingThings {
+public class Cat extends LivingThings {
 
   @Override
   public void breatheProcess() {

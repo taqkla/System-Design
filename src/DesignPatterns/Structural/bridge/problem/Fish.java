@@ -4,7 +4,7 @@ public class Fish extends LivingThings {
 
   @Override
   public void breatheProcess() {
-    // Breathe through Gills.
+    // Breathe through Water.
     // Inhales O2 from Water.
     // Exhales CO2
   }

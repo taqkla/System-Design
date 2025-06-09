@@ -13,9 +13,9 @@ public class Main {
   // logger.Error()
 
   public static void main(String[] args) {
-    Logger.logMessage(1, "This is an log");
-    Logger.logMessage(2, "This is an log");
-    Logger.logMessage(3, "This is an log");
+    Logger.logMessage(1, "This is an info log");
+    Logger.logMessage(2, "This is an warning log");
+    Logger.logMessage(3, "This is an error log");
   }
 
 }

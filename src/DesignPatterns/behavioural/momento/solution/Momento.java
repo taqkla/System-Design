@@ -1,7 +1,7 @@
 package DesignPatterns.behavioural.momento.solution;
 
 /**
- * Momento
+ * Momento :This refers to current moment of an orginator - editor
  */
 public class Momento {
 

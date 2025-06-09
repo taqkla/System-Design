@@ -3,6 +3,7 @@ package DesignPatterns.behavioural.momento.solution;
 import java.util.ArrayList;
 import java.util.List;
 
+// Caretaker - manages the momento.
 public class Caretaker {
 
   private List<Momento> momentoList = new ArrayList<>();

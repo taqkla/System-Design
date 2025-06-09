@@ -20,7 +20,7 @@ public class RemoteControl {
   }
 
   public void undo() {
-    if(!commandHistory.isEmpty()) {
+    if (!commandHistory.isEmpty()) {
       Command lastCommand = commandHistory.pop();
       lastCommand.undo();
     }

@@ -11,9 +11,10 @@ public class Client {
 
   public static void main(String[] args) {
     Address address = new Address(711103, "Fern City Road");
-    User user = new User("Prateek", 19, "9234526751", address, "abc@gmail.com");
+    User user = new User("Prateek", 19, "9234526751", address, "abc@gmail.com"); // good option
     User user2 = new User("Prateek", 19,"0", null,  "abc@gmail.com");
     User user3 = new User("Prateek", 19,"9123", null,  "");
+    User user4 = new User("Prateek", 0, null, null, null);
     System.out.println(user.toString());
   }
 }

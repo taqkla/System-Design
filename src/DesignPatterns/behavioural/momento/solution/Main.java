@@ -8,9 +8,9 @@ package DesignPatterns.behavioural.momento.solution;
  * behavior, allowing the object to maintain its state history while preventing direct access to its
  * internal state.
  *
- * 1. Originator : Represents an object, for which state need to be saved and restored.
- * 2. Momento : holds the state of the momento.
- * 3. Caretaker: managers the states.
+ * 1. Originator : Represents an object, for which state need to be saved and restored. - TextEditior
+ * 2. Momento : holds the state of the momento. - Momento - hold the states of my editor.
+ * 3. Caretaker: managers the states. - Manages the states in a momento.
  */
 public class Main {
 
@@ -30,6 +30,7 @@ public class Main {
     // Restore to the previous state
     editor.restore(caretaker.getMomento(1)); // Restores "Hello, Design Patterns!"
     editor.restore(caretaker.getMomento(0)); // Restores "Hello, World!"
+    editor.restore(caretaker.getMomento(2)); // Hello, Memento Pattern!
 
   }
 }
